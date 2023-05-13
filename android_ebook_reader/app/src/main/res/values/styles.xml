@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 基础应用主题 -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- 自定义您的主题 -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/windowBackground</item>
+        <item name="android:textColorPrimary">@color/textColorPrimary</item>
+        <item name="android:textColorSecondary">@color/textColorSecondary</item>
+        <item name="android:actionMenuTextColor">@color/actionMenuTextColor</item>
+        <item name="android:navigationBarColor">@color/navigationBarColor</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <!-- 添加缺失的样式属性 -->
+        <item name="android:progressBarStyle">@style/Widget.AppCompat.ProgressBar.Horizontal</item>
+    </style>
+
+    <!-- 阅读界面主题 -->
+    <style name="ReaderTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/readerBackground</item>
+        <item name="android:textColorPrimary">@color/readerTextColor</item>
+        <item name="android:textColorSecondary">@color/textColorSecondary</item>
+        <item name="android:actionMenuTextColor">@color/actionMenuTextColor</item>
+        <item name="android:navigationBarColor">@color/navigationBarColor</item>
+
+    </style>
+
+    <!-- 设置界面主题 -->
+    <style name="SettingsTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/windowBackground</item>
+        <item name="android:textColorPrimary">@color/textColorPrimary</item>
+        <item name="android:textColorSecondary">@color/textColorSecondary</item>
+        <item name="android:actionMenuTextColor">@color/actionMenuTextColor</item>
+        <item name="android:navigationBarColor">@color/navigationBarColor</item>
+    </style>
+
+    <style name="FolioReaderProgressBarStyle" parent="Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:indeterminateDrawable">@drawable/progress_indeterminate_horizontal_material</item>
+        <item name="android:progressDrawable">@drawable/progress_horizontal_material</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

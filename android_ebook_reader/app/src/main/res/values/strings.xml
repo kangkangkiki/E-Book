@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">android_ebook_reader</string>
+    <string name="profile">个人资料</string>
+    <string name="bookmarks">书签</string>
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+    <string name="main">主界面</string>
+    <string name="bookmark">书签</string>
+    <string name="reader">阅读器</string>
+    <string name="search_hint">搜索书籍</string>
+    <string name="download">下载</string>
+    <string name="BookTitle">书名</string>
+</resources>

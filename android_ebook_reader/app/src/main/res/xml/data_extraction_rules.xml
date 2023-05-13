@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extraction-rules>
+    <cloud-metadata>
+        <key>app_data</key>
+        <value>user_books</value>
+    </cloud-metadata>
+    <rules>
+        <rule action="include" path="/shared_prefs/"/>
+        <rule action="include" path="/databases/"/>
+        <rule action="include" path="/files/"/>
+    </rules>
+</extraction-rules>

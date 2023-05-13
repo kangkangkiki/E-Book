@@ -1,0 +1,62 @@
+
+plugins {
+    id 'com.android.application'
+}
+//apply plugin: 'com.github.spotbugs'
+
+android {
+    compileSdkVersion 33
+
+    defaultConfig {
+        applicationId "com.example.android_ebook_reader"
+        minSdk 24
+        targetSdk 31
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    // 添加命名空间
+    namespace "com.example.android_ebook_reader"
+}
+
+//spotbugs {
+//    toolVersion = '4.5.3' // SpotBugs版本
+//    ignoreFailures = true
+//    effort = 'max'
+//    reportLevel = 'low'
+//    reportsDir = file("$project.buildDir/spotbugsReports")
+//    //includeFilter = file("$rootProject.rootDir/config/quality/spotbugs/includeFilter.xml")
+//    excludeFilter = file("$rootProject.rootDir/config/quality/spotbugs/android-exclude-filter.xml")
+//}
+
+
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.8.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.room:room-runtime:2.5.1'
+    annotationProcessor 'androidx.room:room-compiler:2.5.1'
+    implementation files('libs/epublib-core-latest.jar')
+    //implementation 'com.folioreader:folioreader:0.5.1'
+//    implementation project(':FolioReader-Android')
+    implementation "com.folioreader:folioreader:0.5.1"
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+}
+//apply from: 'libs/FolioReader-Android/config/quality/quality.gradle'
